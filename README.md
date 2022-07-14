@@ -8,7 +8,7 @@
 | :------------: | :--: | :------------------------------------------------------: |:--:|:--:|  :--:|:--:| :--:|
 |달빛 여우|골1|[문제](https://www.acmicpc.net/problem/16118)| | |  | |승희|
 |후위표기식|골2|[문제](https://www.acmicpc.net/problem/1918)|  | |  | |호진|
-|거울 설치|골3|[문제](https://www.acmicpc.net/problem/2151)| | |  | | 수진 |
+|거울 설치|골3|[문제](https://www.acmicpc.net/problem/2151)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0717/%EA%B1%B0%EC%9A%B8%20%EC%84%A4%EC%B9%98.java) | |  | | 수진 |
 |텔레포트3|골4|[문제](https://www.acmicpc.net/problem/12908)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0717/%ED%85%94%EB%A0%88%ED%8F%AC%ED%8A%B83.java)  | |  | |연의|
 
 
