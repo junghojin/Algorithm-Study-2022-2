@@ -1,12 +1,12 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
 import java.util.PriorityQueue;
-import java.util.Queue;
+
+// 22. 07. 14. 목 - 백준 2151 - 골드 3 - 거울 설치
 
 public class Main_2151 {
 
-    private static int startR, startC, N;
+   private static int startR, startC, N;
     private static char[][] map;
 
     public static void main(String[] args) throws Exception {
@@ -17,25 +17,24 @@ public class Main_2151 {
         startR = -1;
         startC = -1;
         for (int i = 0; i < N; i++) {
-            String str = br.readLine();
+            String str = br.readLine().trim();
             for (int j = 0; j < N; j++) {
                 map[i][j] = str.charAt(j);
                 if (map[i][j] == '#' && startR == -1) {
                     startR = i;
                     startC = j;
-                    map[i][j] = '.';
                 }
             }
         }
         // ================ input end =====================
 
-        bfs();
+        System.out.println(bfs());
     }
 
     private static int dr[] = {-1, 1, 0, 0};
     private static int dc[] = {0, 0, -1, 1};
 
-    private static void bfs() {
+    private static int bfs() {
         PriorityQueue<Mirror> pq = new PriorityQueue<>();
         boolean[][][] visited = new boolean[N][N][4];
 
@@ -54,27 +53,34 @@ public class Main_2151 {
             if (nr < 0 || nc < 0 || nr >= N || nc >= N || visited[nr][nc][nd] || map[nr][nc] == '*') continue;
 
             if (map[nr][nc] == '#') {
-                System.out.println(m);
-                return;
+                return m;
             }
 
             if (map[nr][nc] == '.') {
                 visited[nr][nc][nd] = true;
                 pq.add(new Mirror(nr, nc, nd, m));
             } else if (map[nr][nc] == '!') { // 거울일 경우
-                // 경우 1: 거울 설치 X
+                // 경우 1: 거울 설치 X - 반사 진행 방향으로 통과
                 pq.add(new Mirror(nr, nc, nd, m));
                 visited[nr][nc][nd] = true;
 
                 // 경우 2: 거울 설치 O
-                for (int i = 0; i < 4; i++) {
-                    if (i != nd) {
-                        pq.add(new Mirror(nr, nc, i, m + 1));
-                        visited[nr][nc][i] = true;
-                    }
+                if(nd == 0 || nd == 1) { // 상, 하 일 경우 좌, 우로 반사
+                    pq.add(new Mirror(nr, nc, 2, m + 1));
+                    pq.add(new Mirror(nr, nc, 3, m + 1));
+                    visited[nr][nc][2] = true;
+                    visited[nr][nc][3] = true;
+                }
+
+                if(nd == 2 || nd == 3) {
+                    pq.add(new Mirror(nr, nc, 0, m + 1));
+                    pq.add(new Mirror(nr, nc, 1, m + 1));
+                    visited[nr][nc][0] = true;
+                    visited[nr][nc][1] = true;
                 }
             }
         }
+        return 0;
     }
 
     private static class Mirror implements Comparable<Mirror> {
