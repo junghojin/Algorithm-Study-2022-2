@@ -39,8 +39,8 @@ public class Main_16118 {
             int to = Integer.parseInt(str.nextToken());
             int dis = Integer.parseInt(str.nextToken());
 
-            graph.get(from).add(new Node(to, dis));
-            graph.get(to).add(new Node(from, dis));
+            graph.get(from).add(new Node(to, dis * 2));
+            graph.get(to).add(new Node(from, dis * 2));
         }
         // =================== input end =====================
 
@@ -68,12 +68,12 @@ public class Main_16118 {
         while (!pq.isEmpty()) {
             Node node = pq.poll();
 
-            int index = node.vertex;
+            int vertex = node.vertex;
             int dis = node.distance;
 
-            if (dis > distance_fox[index]) continue;
+            if (dis > distance_fox[vertex]) continue;
 
-            for (Node linkedNode : graph.get(index)) {
+            for (Node linkedNode : graph.get(vertex)) {
                 if (dis + linkedNode.distance < distance_fox[linkedNode.vertex]) {
                     distance_fox[linkedNode.vertex] = dis + linkedNode.distance;
                     pq.offer(new Node(linkedNode.vertex, distance_fox[linkedNode.vertex]));
@@ -85,35 +85,38 @@ public class Main_16118 {
     // 달빛 늑대 - 다익스트라 (홀수: 2배 빠른 속도, 짝수 1/2 느린 속도)
     private static void search_wolf(int start) {
 
+        // 첫 시작은 0번째 방문 = 짝수 번째 방문 : 자기자신을 방문하므로 거리는 0
         distance_wolf[start][2] = 0;
 
         PriorityQueue<Node> pq = new PriorityQueue<>();
-        pq.offer(new Node(start, 0, 2)); // 첫 시작은 0번째 방문, 짝수 번째 방문
+        pq.offer(new Node(start, 0, 2));
 
         while (!pq.isEmpty()) {
             Node node = pq.poll();
 
-            int index = node.vertex;
-            int cnt = node.cnt;
+            int vertex = node.vertex; 
             int dis = node.distance;
 
-            if (dis > distance_wolf[index][cnt]) continue;
+            if (dis > distance_wolf[vertex][node.cnt]) continue;
 
+            // 나를 거쳐 다른 노드로 갈 때의 최소 거리 - 다익스트라 
             // 현 노드를 매개로 다음 노드로의 거리를 구할 때는 짝수 -> 홀수, 홀수 -> 짝수가 된다.
-            for (Node linkedNode : graph.get(index)) {
+            for (Node next : graph.get(vertex)) {
                 int added_distance = 0;
-                int nCnt= -1;
+                int next_Cnt= -1;
 
-                if (cnt == 1) { // 홀수 번째 방문이라면, 속도 빨라짐
-                    added_distance = linkedNode.distance / 2;
-                    nCnt = 2;
-                } else { // 짝수 번째 방문이라면, 속도 느려짐
-                    added_distance = linkedNode.distance * 2;
-                    nCnt = 1;
+                // 현 노드가 짝수 번째 방문이면 다음 노드는 홀수 번째 방문 -> 속도 빨라짐
+                if (node.cnt == 2) {
+                    added_distance = dis + next.distance / 2;
+                    next_Cnt = 1;
+                } else {
+                    // 현 노드가 홀수 번째 방문이면 다음 노드는 짝수 번째 방문 -> 속도 빨라짐
+                    added_distance = dis + next.distance * 2;
+                    next_Cnt = 2;
                 }
-                if (dis + added_distance < distance_wolf[linkedNode.vertex][nCnt]) {
-                    distance_wolf[linkedNode.vertex][nCnt] = dis + added_distance;
-                    pq.offer(new Node(linkedNode.vertex, distance_wolf[linkedNode.vertex][nCnt], nCnt));
+                if (added_distance < distance_wolf[next.vertex][next_Cnt]) {
+                    distance_wolf[next.vertex][next_Cnt] = added_distance;
+                    pq.offer(new Node(next.vertex, added_distance, next_Cnt));
                 }
             }
         }
@@ -137,7 +140,7 @@ public class Main_16118 {
         }
 
         @Override
-        public int compareTo(Node o) {
+        public int compareTo(Node o) { // 오름차순
             return distance - o.distance;
         }
 
