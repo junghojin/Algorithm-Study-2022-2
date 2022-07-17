@@ -22,7 +22,7 @@
 |비용|플5|[BOJ2463](https://www.acmicpc.net/problem/2463)| | |  | |승희|
 |로봇 청소기|골2|[BOJ4991](https://www.acmicpc.net/problem/4991)|  | |  | |호진|
 |싸지방에 간 준하|골3|[BOJ12764](https://www.acmicpc.net/problem/12764)| | |  | |수진|
-|||[문제]()|  | |  | |연의|
+|택배|골3|[BOJ1719](https://www.acmicpc.net/problem/1719)|  | |  | |연의|
 
 ---
 
