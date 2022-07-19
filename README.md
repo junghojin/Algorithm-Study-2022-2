@@ -21,7 +21,7 @@
 | :------------: | :--: | :------------------------------------------------------: |:--:|:--:|  :--:|:--:| :--:|
 |비용|플5|[BOJ2463](https://www.acmicpc.net/problem/2463)| | |  | |승희|
 |로봇 청소기|골2|[BOJ4991](https://www.acmicpc.net/problem/4991)|  | |  | |호진|
-|싸지방에 간 준하|골3|[BOJ12764](https://www.acmicpc.net/problem/12764)| | |  | |수진|
+|싸지방에 간 준하|골3|[BOJ12764](https://www.acmicpc.net/problem/12764)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0724/%EC%8B%B8%EC%A7%80%EB%B0%A9%EC%97%90%20%EA%B0%84%20%EC%A4%80%ED%95%98.java) | |  | |수진|
 |택배|골3|[BOJ1719](https://www.acmicpc.net/problem/1719)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0724/%ED%83%9D%EB%B0%B0.java)  |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/329d36043837b32e410d31ba1168e5036f599407/%EC%A0%95%ED%98%B8%EC%A7%84/Main_1719.java) |  | |연의|
 
 ---
