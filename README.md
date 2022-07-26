@@ -10,7 +10,7 @@
 
 |      문제      | 레벨 |                           URL                            | 승희 코드 | 호진 코드 |  수진 코드 | 연의 코드 |문제 가져온 사람 |
 | :------------: | :--: | :------------------------------------------------------: |:--:|:--:|  :--:|:--:|  :--:|
-|RBY팡!|골2|[BOJ5577](https://www.acmicpc.net/problem/5577)| | |  | |승희|
+|RBY팡!|골2|[BOJ5577](https://www.acmicpc.net/problem/5577)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0731/RBY!%ED%8C%A1.java) | |  | |승희|
 |숫자구슬|골2|[BOJ2613](https://www.acmicpc.net/problem/2613) | | | | |호진|
 |Cubeditor|골3|[BOJ1701](https://www.acmicpc.net/problem/1701)| | |  | |수진|
 
