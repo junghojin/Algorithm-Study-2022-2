@@ -10,7 +10,7 @@
 | :------------: | :--: | :------------------------------------------------------: |:--:|:--:|  :--:|:--:|  :--:|
 |견우와 직녀|골2|[BOJ16137](https://www.acmicpc.net/problem/16137) | |  | ||승희|
 |곱셈 게임|골2| [BOJ12783](https://www.acmicpc.net/problem/12783) | | | ||수진|
-|폰트|골3|[BOJ9997](https://www.acmicpc.net/problem/9997)| |  | ||연의|
+|폰트|골3|[BOJ9997](https://www.acmicpc.net/problem/9997)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0807/%ED%8F%B0%ED%8A%B8.java) |  | ||연의|
 
 ---
 
