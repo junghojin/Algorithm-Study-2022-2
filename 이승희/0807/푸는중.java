@@ -1,8 +1,8 @@
-// 견우와 직녀
+// BOJ - 견우와 직녀 (16137번)
+// BFS
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
@@ -18,12 +18,11 @@ public class Main_12783 {
         int x;
         int y;
         int dis;
-        boolean use;
-        public Node(int x, int y, int dis, boolean use){
+
+        public Node(int x, int y, int dis){
             this.x = x;
             this.y = y;
             this.dis = dis;
-            this.use = use;
         }
     }
     public static void main(String[] args) throws IOException {
@@ -40,65 +39,59 @@ public class Main_12783 {
             }
         }
 
-        bfs();
-        System.out.println(min_time);
-    }
-
-    public static void bfs(){
-        int[][] visited = new int[n][n];
         for(int i=0;i<n;i++){
-            Arrays.fill(visited[i], Integer.MAX_VALUE);
-        }
-        Queue<Node> q = new LinkedList<>();
-        visited[0][0] = 0;
-        q.add(new Node(0, 0, 0, false));
-        while (!q.isEmpty()){
-            Node node = q.poll();
-            if(node.x == n-1 && node.y == n-1){
-                continue;
-            }
-            for(int d=0;d<4;d++){
-                int nx = node.x + dx[d];
-                int ny = node.y + dy[d];
-                if(nx < 0 || nx >= n || ny < 0 || ny >= n) continue;
-                if(visited[nx][ny] < node.dis+1) continue;
-                if(map[nx][ny] == 1){
-                    visited[nx][ny] = node.dis+1;
-                    q.add(new Node(nx, ny, node.dis+1, node.use));
-                } else if(map[nx][ny] >= 2){
-
-                    if((node.dis+1) % map[nx][ny] == 0){
-                        visited[nx][ny] = node.dis+1;
-                        q.add(new Node(nx, ny, node.dis+1, true));
-                    }
-                } else {
-
-                    if(node.use) continue;
-                    if(check(nx, ny)) continue;
-                    if((node.dis+1) % m == 0){
-                        visited[nx][ny] = node.dis;
-                        q.add(new Node(nx, ny, node.dis+1, true));
+            for(int j=0;j<n;j++){
+                if(map[i][j] == 0){
+                    if(!check(i, j)){
+                        map[i][j] = m;
+                        boolean[][] visited = new boolean[n][n];
+                        bfs(visited);
+                        map[i][j] = 0;
                     }
                 }
             }
         }
 
-//        for(int i=0;i<n;i++){
-//            for(int j=0;j<n;j++){
-//                if(visited[i][j] == Integer.MAX_VALUE){
-//                    System.out.print('m'+" ");
-//                } else {
-//                    System.out.print(visited[i][j]+" ");
-//                }
-//            }
-//            System.out.println();
-//        }
 
+        System.out.println(min_time);
+    }
 
-        min_time = visited[n-1][n-1];
+    public static void bfs(boolean[][] visited){
+
+        Queue<Node> q = new LinkedList<>();
+        visited[0][0] = true;
+        q.add(new Node(0, 0, 0));
+        while (!q.isEmpty()){
+            Node node = q.poll();
+            if(node.x == n-1 && node.y == n-1){
+                min_time = Math.min(min_time, node.dis);
+                return;
+            }
+            for(int d=0;d<4;d++){
+                int nx = node.x + dx[d];
+                int ny = node.y + dy[d];
+                if(nx < 0 || nx >= n || ny < 0 || ny >= n) continue;
+                if(visited[nx][ny]) continue;
+
+                if(map[nx][ny] == 1){
+                    visited[nx][ny] = true;
+                    q.add(new Node(nx, ny, node.dis+1));
+                } else if(map[nx][ny] >= 2 && map[node.x][node.y] == 1){
+                    if((node.dis+1) % map[nx][ny] == 0){
+                        visited[nx][ny] = true;
+                        q.add(new Node(nx, ny, node.dis+1));
+                    } else {
+                        q.add(new Node(node.x, node.y, node.dis+1));
+                    }
+                }
+            }
+        }
+
+        return;
     }
 
     public static boolean check(int x, int y){
+
         for(int d=0;d<4;d++){
             int nx = x + dx[d];
             int ny = y + dy[d];
@@ -115,3 +108,4 @@ public class Main_12783 {
     }
 
 }
+
