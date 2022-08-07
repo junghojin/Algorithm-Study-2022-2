@@ -9,7 +9,7 @@
 |      문제      | 레벨 |                           URL                            | 승희 코드 | 호진 코드 |  수진 코드 | 연의 코드 |문제 가져온 사람 |
 | :------------: | :--: | :------------------------------------------------------: |:--:|:--:|  :--:|:--:|  :--:|
 |견우와 직녀|골2|[BOJ16137](https://www.acmicpc.net/problem/16137) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0807/%ED%91%B8%EB%8A%94%EC%A4%91.java) |  | ||승희|
-|곱셈 게임|골2| [BOJ12783](https://www.acmicpc.net/problem/12783) | | | ||수진|
+|곱셈 게임|골2| [BOJ12783](https://www.acmicpc.net/problem/12783) |[푸는중](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0807/%EA%B3%B1%EC%85%88%EA%B2%8C%EC%9E%84(%ED%91%B8%EB%8A%94%EC%A4%91).java) | | ||수진|
 |폰트|골3|[BOJ9997](https://www.acmicpc.net/problem/9997)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0807/%ED%8F%B0%ED%8A%B8.java) |  | ||연의|
 
 ---
