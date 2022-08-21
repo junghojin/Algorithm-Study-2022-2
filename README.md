@@ -22,9 +22,9 @@
 
 |      문제      | 레벨 |                           URL                            | 승희 코드 | 호진 코드 |  수진 코드 | 연의 코드 |문제 가져온 사람 |
 | :------------: | :--: | :------------------------------------------------------: |:--:|:--:|  :--:|:--:|  :--:|
-|견우와 직녀|골2|[BOJ16137](https://www.acmicpc.net/problem/16137) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0807/%EA%B2%AC%EC%9A%B0%EC%99%80%EC%A7%81%EB%85%80.java) |[Code](정호진/Main_16137.java)  | | [푸는중](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%97%B0%EC%9D%98/8%EC%9B%941%EC%A3%BC%EC%B0%A8/BJ_16137_%EA%B2%AC%EC%9A%B0%EC%99%80%EC%A7%81%EB%85%80.java) |승희|
-|곱셈 게임|골2| [BOJ12783](https://www.acmicpc.net/problem/12783) |[푸는중](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0807/%EA%B3%B1%EC%85%88%EA%B2%8C%EC%9E%84(%ED%91%B8%EB%8A%94%EC%A4%91).java) |[푸는중](정호진/Main_12783.java) | ||수진|
-|폰트|골3|[BOJ9997](https://www.acmicpc.net/problem/9997)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0807/%ED%8F%B0%ED%8A%B8.java) |[Code](정호진/Main_9997.java)  |  |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%97%B0%EC%9D%98/8%EC%9B%941%EC%A3%BC%EC%B0%A8/BJ_9997_%ED%8F%B0%ED%8A%B8.java)|연의|
+|견우와 직녀|골2|[BOJ16137](https://www.acmicpc.net/problem/16137) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0807/%EA%B2%AC%EC%9A%B0%EC%99%80%EC%A7%81%EB%85%80.java) |  | | [푸는중](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%97%B0%EC%9D%98/8%EC%9B%941%EC%A3%BC%EC%B0%A8/BJ_16137_%EA%B2%AC%EC%9A%B0%EC%99%80%EC%A7%81%EB%85%80.java) |승희|
+|곱셈 게임|골2| [BOJ12783](https://www.acmicpc.net/problem/12783) |[푸는중](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0807/%EA%B3%B1%EC%85%88%EA%B2%8C%EC%9E%84(%ED%91%B8%EB%8A%94%EC%A4%91).java) | | ||수진|
+|폰트|골3|[BOJ9997](https://www.acmicpc.net/problem/9997)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0807/%ED%8F%B0%ED%8A%B8.java) |  |  |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%97%B0%EC%9D%98/8%EC%9B%941%EC%A3%BC%EC%B0%A8/BJ_9997_%ED%8F%B0%ED%8A%B8.java)|연의|
 
 ---
 
@@ -32,9 +32,9 @@
 
 |      문제      | 레벨 |                           URL                            | 승희 코드 | 호진 코드 |  수진 코드 | 연의 코드 |문제 가져온 사람 |
 | :------------: | :--: | :------------------------------------------------------: |:--:|:--:|  :--:|:--:|  :--:|
-|RBY팡!|골2|[BOJ5577](https://www.acmicpc.net/problem/5577)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0731/RBY!%ED%8C%A1.java) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/a40c1893b8f4aa091e153d3c84b2f1f6b57d6e25/%EC%A0%95%ED%98%B8%EC%A7%84/Main_5577.java) | [Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EA%B9%80%EC%88%98%EC%A7%84/7_4/BJ5577.java) | |승희|
-|숫자구슬|골2|[BOJ2613](https://www.acmicpc.net/problem/2613) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0731/%EC%88%AB%EC%9E%90%EA%B5%AC%EC%8A%AC.java) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/538512dd8af120f1219406f7c5d11e88b04a3510/%EC%A0%95%ED%98%B8%EC%A7%84/Main_2613.java) | | |호진|
-|Cubeditor|골3|[BOJ1701](https://www.acmicpc.net/problem/1701)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0731/Cubeditor.java) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/538512dd8af120f1219406f7c5d11e88b04a3510/%EC%A0%95%ED%98%B8%EC%A7%84/Main_1701.java) | [Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EA%B9%80%EC%88%98%EC%A7%84/7_4/BJ1701.java) | |수진|
+|RBY팡!|골2|[BOJ5577](https://www.acmicpc.net/problem/5577)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0731/RBY!%ED%8C%A1.java) | | [Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EA%B9%80%EC%88%98%EC%A7%84/7_4/BJ5577.java) | |승희|
+|숫자구슬|골2|[BOJ2613](https://www.acmicpc.net/problem/2613) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0731/%EC%88%AB%EC%9E%90%EA%B5%AC%EC%8A%AC.java) | | | |호진|
+|Cubeditor|골3|[BOJ1701](https://www.acmicpc.net/problem/1701)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0731/Cubeditor.java) | | [Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EA%B9%80%EC%88%98%EC%A7%84/7_4/BJ1701.java) | |수진|
 
 ---
 
