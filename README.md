@@ -11,7 +11,7 @@
 |용이 산다|골1|[BOJ3430](https://www.acmicpc.net/problem/3430) | | | |  |승희|
 |-|-| | | | ||호진|
 |-|-| | | | ||수진|
-|-|-| | | | ||연의|
+|소풍|골3|[BOJ](https://www.acmicpc.net/problem/2026) | | | ||연의|
 
 ---
 
