@@ -11,7 +11,7 @@
 |용이 산다|골1|[BOJ3430](https://www.acmicpc.net/problem/3430) | | | |  |승희|
 |친구 네트워크|골2| [BOJ4195](https://www.acmicpc.net/problem/4195)| | | ||호진|
 |정육면체|골2| [BOJ9029](https://www.acmicpc.net/problem/9029) | | | ||수진|
-|소풍|골3|[BOJ2026](https://www.acmicpc.net/problem/2026) | | | ||연의|
+|소풍|골3|[BOJ2026](https://www.acmicpc.net/problem/2026) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0828/%EC%86%8C%ED%92%8D.java) | | ||연의|
 
 ---
 
