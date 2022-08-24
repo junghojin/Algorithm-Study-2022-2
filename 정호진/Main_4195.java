@@ -4,7 +4,7 @@ import java.util.*;
 // 22.08.25.
 // 백준 4195 - 친구 네트워크 - Union & Find 
 
-public class Main_2026 {
+public class Main_4195 {
 
     private static int size[], parents[]; // size: 속한 네트워크 규모, parents: 부모
 
