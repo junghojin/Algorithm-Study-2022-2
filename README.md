@@ -11,7 +11,7 @@
 |벽 부수고 이동하기4|골드2|[BOJ16946](https://www.acmicpc.net/problem/16946) | | | |  |승희|
 |합이 0인 네정수|골드2|[BOJ7453](https://www.acmicpc.net/problem/7453) | | |  ||호진|
 |달팽이3|골드3|[BOJ1959](https://www.acmicpc.net/problem/1959) | | |||수진|
-|-|-| | | | |||연의|
+|친구비|골드3|[BOJ16562](https://www.acmicpc.net/problem/16562) | | | |||연의|
 
 ---
 
