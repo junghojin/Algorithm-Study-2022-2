@@ -8,9 +8,9 @@
 
 |      문제      | 레벨 |                           URL                            | 승희 코드 | 호진 코드 |  수진 코드 | 연의 코드 |문제 가져온 사람 |
 | :------------: | :--: | :------------------------------------------------------: |:--:|:--:|  :--:|:--:|  :--:|
-|용이 산다|골1|[BOJ3430](https://www.acmicpc.net/problem/3430) | | | |  |승희|
+|용이 산다|골1|[BOJ3430](https://www.acmicpc.net/problem/3430) |[푸는중(메초ㅠ)](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0828/%EC%9A%A9%EC%9D%B4%EC%82%B0%EB%8B%A4(%ED%91%B8%EB%8A%94%EC%A4%91-%3E%EB%A9%94%EC%B4%88).java) | | |  |승희|
 |친구 네트워크|골2| [BOJ4195](https://www.acmicpc.net/problem/4195)|[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0828/%EC%B9%9C%EA%B5%AC%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC.java) | | ||호진|
-|정육면체|골2| [BOJ9029](https://www.acmicpc.net/problem/9029) | | | ||수진|
+|정육면체|골2| [BOJ9029](https://www.acmicpc.net/problem/9029) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0828/%EC%A0%95%EC%9C%A1%EB%A9%B4%EC%B2%B4.java) | | ||수진|
 |소풍|골3|[BOJ2026](https://www.acmicpc.net/problem/2026) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0828/%EC%86%8C%ED%92%8D.java) | | ||연의|
 
 ---
