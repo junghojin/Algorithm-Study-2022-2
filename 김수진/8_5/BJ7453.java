@@ -2,11 +2,12 @@ import java.io.*;
 import java.util.*;
 
 public class BJ7453 {
+    static long[] list,list2;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
         int n = Integer.parseInt(br.readLine());
-        
+
         long[][] arr = new long[4][n];
 
         for (int i = 0; i < n; i++) {
@@ -16,24 +17,39 @@ public class BJ7453 {
             }
         }
 
-        HashMap<Long, Long> map = new HashMap();
+        list = new long[n*n];
+        list2 = new long[n*n];
 
-        long ans=0;
         for (int j = 0; j < n; j++) {
             for (int k = 0; k < n; k++) {
-                Long s = arr[0][j]+arr[1][k];
-                if (map.containsKey(s)) map.put(s,map.get(s) + 1);
-                else map.put(s,1L);
+                list[j*n+k] = arr[0][j]+arr[1][k];
+                list2[j*n+k] = arr[2][j]+arr[3][k];
             }
         }
+        long ans=0;
+        Arrays.sort(list);
+        Arrays.sort(list2);
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                Long s = arr[2][i]+arr[3][j];
-                if (map.containsKey(-s)){
-                    ans+=map.get(-s);
+        int s1=0,s2=n*n-1;
+
+        while(s1<n*n && 0<=s2){
+            long sum = list[s1]+list2[s2];
+            long cnt1=1, cnt2=1;
+
+            if (sum==0){
+                while (s1<n*n-1 && list[s1]==list[s1+1]){
+                    cnt1++;
+                    s1++;
                 }
+                while (s2>0 && list2[s2]==list2[s2-1]){
+                    cnt2++;
+                    s2--;
+                }
+                ans+=cnt1*cnt2;
             }
+            if (sum<0) s1++;
+            else s2--;
+
         }
 
         System.out.print(ans);
