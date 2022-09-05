@@ -6,7 +6,7 @@ import java.io.*;
 public class Main_16946 {
 
     private static int map[][], group[][], groupSize[], N, M;
-    private static boolean visited[][];
+    private static boolean visited[][]; 
     private static int dr[] = new int[]{-1, 1, 0, 0}; // 상하좌우
     private static int dc[] = new int[]{0, 0, -1, 1};
 
