@@ -8,7 +8,7 @@
 
 |      문제      | 레벨 |                           URL                            | 승희 코드 | 호진 코드 |  수진 코드 | 연의 코드 |문제 가져온 사람 |
 | :------------: | :--: | :------------------------------------------------------: |:--:|:--:|  :--:|:--:|  :--:|
-|다리 만들기|골드3|[BOJ2146](https://www.acmicpc.net/problem/2146) | |[Code](정호진/Main_2146.java) | |  |승희|
+|다리 만들기|골드3|[BOJ2146](https://www.acmicpc.net/problem/2146) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0911/%EB%8B%A4%EB%A6%AC%EB%A7%8C%EB%93%A4%EA%B8%B0.java) |[Code](정호진/Main_2146.java) | |  |승희|
 |우주 신과의 교감|골드3|[BOJ1774](https://www.acmicpc.net/problem/1774) | | |  ||호진|
 |소수의 연속합|골드3|[BOJ1644](https://www.acmicpc.net/problem/1644) | | | ||연의|
 
