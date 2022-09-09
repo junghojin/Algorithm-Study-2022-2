@@ -1,11 +1,14 @@
+// BOJ - 다리만들기(2146번)
+// BFS
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main_2146 {
+public class Main {
     public static int n;
     public static int s;
     public static int[][] map;
@@ -48,15 +51,10 @@ public class Main_2146 {
             }
         }
 
-
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
-                if(map[i][j] == 1) {
-                    boolean[][] visited = new boolean[n][n];
-                    dfs(i, j, check[i][j], 0, visited);
-                }
-            }
+        for(int i=1;i<=s;i++){
+            bfs2(i);
         }
+
         System.out.println(min_value);
     }
 
@@ -76,29 +74,46 @@ public class Main_2146 {
                             q.add(new Node(nx, ny));
                         }
                     }
+
                 }
             }
         }
     }
 
-    public static void dfs(int x, int y, int c, int len, boolean[][] visited){
-        visited[x][y] = true;
-        if(len > min_value) return;
+    public static void bfs2(int c){
+        Queue<Node> q = new LinkedList<>();
+        int[][] visited = new int[n][n];
+        for(int i=0;i<n;i++){
+            Arrays.fill(visited[i], -1);
+        }
 
-        for(int d=0;d<4;d++){
-            int nx = x + dx[d];
-            int ny = y + dy[d];
-            if(nx < 0 || ny < 0 || nx >= n || ny >= n) continue;
-            if(!visited[nx][ny]){
-                if(check[nx][ny] == c){
-                    return;
-                } else if(check[nx][ny] == 0){
-                    dfs(nx, ny, c, len+1, visited);
-                } else {
-                    min_value = Math.min(min_value, len);
-                    return;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(check[i][j] == c){
+                    visited[i][j] = 0;
+                    q.add(new Node(i, j));
                 }
             }
         }
+
+        while (!q.isEmpty()){
+            Node node = q.poll();
+            for(int d=0;d<4;d++){
+                int nx = node.x + dx[d];
+                int ny = node.y + dy[d];
+                if(nx < 0 || nx >= n || ny < 0 || ny >= n) continue;
+
+                if(map[nx][ny] == 0){
+                    if(visited[nx][ny] == -1 || visited[nx][ny] > visited[node.x][node.y]+1){
+                        visited[nx][ny] = visited[node.x][node.y]+1;
+                        q.add(new Node(nx, ny));
+                    }
+                } else if(check[nx][ny] != c){
+                    min_value = Math.min(min_value, visited[node.x][node.y]);
+                }
+
+            }
+        }
     }
+
 }
