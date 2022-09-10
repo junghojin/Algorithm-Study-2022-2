@@ -19,7 +19,7 @@
 |      문제      | 레벨 |                           URL                            | 승희 코드 | 호진 코드 |  수진 코드 | 연의 코드 |문제 가져온 사람 |
 | :------------: | :--: | :------------------------------------------------------: |:--:|:--:|  :--:|:--:|  :--:|
 |다리 만들기|골드3|[BOJ2146](https://www.acmicpc.net/problem/2146) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0911/%EB%8B%A4%EB%A6%AC%EB%A7%8C%EB%93%A4%EA%B8%B0.java) |[Code](정호진/Main_2146.java) | |  |승희|
-|우주 신과의 교감|골드3|[BOJ1774](https://www.acmicpc.net/problem/1774) | |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/e364a6b374cc3e153f9f8b6c397628f3ed251e6e/%EC%A0%95%ED%98%B8%EC%A7%84/Main_1774.java) |  ||호진|
+|우주 신과의 교감|골드3|[BOJ1774](https://www.acmicpc.net/problem/1774) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0911/%EC%9A%B0%EC%A3%BC%EC%8B%A0%EA%B3%BC%EC%9D%98%EA%B5%90%EA%B0%90.java) |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/e364a6b374cc3e153f9f8b6c397628f3ed251e6e/%EC%A0%95%ED%98%B8%EC%A7%84/Main_1774.java) |  ||호진|
 |소수의 연속합|골드3|[BOJ1644](https://www.acmicpc.net/problem/1644) | |[Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/8bec26935b1efeb72d39c0d9f3836e177d8efe5a/%EC%A0%95%ED%98%B8%EC%A7%84/Main_1644.java) | ||연의|
 
 ---
