@@ -1,8 +1,8 @@
 import java.util.*;
 
-// 22.09.10.토 - 백준 1664 - 소수의 연속 합 - 소수, 투포인터
+// 22.09.10.토 - 백준 1644 - 소수의 연속 합(골드3) - 소수, 투포인터
 
-public class Main_1664 {
+public class Main_1644 {
 
     private static int N;
     private static boolean isPrime[];
