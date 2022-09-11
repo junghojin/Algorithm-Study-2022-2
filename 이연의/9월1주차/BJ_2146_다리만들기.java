@@ -1,5 +1,3 @@
-package Baekjoon;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -12,7 +10,7 @@ public class BJ_2146_다리만들기 {
     static int[] dx = {0,0,1,-1};
     static int[] dy = {1,-1,0,0};
 
-    static class Point implements Comparable<Point>{
+    static class Point {
         int x, y, d;
         public Point(int x, int y, int d){
             this.x = x;
@@ -20,10 +18,6 @@ public class BJ_2146_다리만들기 {
             this.d = d;
         }
 
-        @Override
-        public int compareTo(Point o) {
-            return this.d-o.d;
-        }
     }
 
     public static void main(String[] args) throws IOException {
@@ -47,6 +41,7 @@ public class BJ_2146_다리만들기 {
             }
         }
 
+
         for(int c = 1 ; c <= cnt; c++){
             distance(c, new boolean[N][N]);
         }
@@ -66,14 +61,16 @@ public class BJ_2146_다리만들기 {
             int j = cur.y;
 
             map[i][j] = cnt;
-            visit[i][j] = true;
 
             for(int d = 0; d <4; d++){
                 int mi = i + dx[d];
                 int mj = j + dy[d];
 
                 if(mi < 0 || mi >=N || mj < 0 || mj >=N || visit[mi][mj]) continue;
-                if(map[mi][mj]==1) pq.add(new Point(mi,mj,0));
+                if(map[mi][mj]==1){
+                    visit[mi][mj] = true;
+                    pq.add(new Point(mi,mj,0));
+                }
             }
         }
     }
@@ -89,31 +86,27 @@ public class BJ_2146_다리만들기 {
             }
         }
 
-        while(!pq.isEmpty()){
+        while(!pq.isEmpty()) {
             Point cur = pq.poll();
             int x = cur.x;
             int y = cur.y;
             int d = cur.d;
 
-            for(int r = 0 ;r < 4 ; r++){
+            for (int r = 0; r < 4; r++) {
                 int mx = x + dx[r];
                 int my = y + dy[r];
 
-                if(mx < 0 || mx >=N || my < 0 || my >=N  || visit[mx][my]) continue;
-                if(map[mx][my] == 0){
-                    if(d+1 <= ans){
+                if (mx < 0 || mx >= N || my < 0 || my >= N || visit[mx][my]) continue;
+                if (map[mx][my] == 0) {
+                    if (d + 1 <= ans) {
                         visit[mx][my] = true;
-                        pq.add(new Point(mx,my,d+1));
+                        pq.add(new Point(mx, my, d + 1));
                     }
-
-                }else if(map[mx][my] > cnt){
-                    ans = Math.min(ans,d);
+                } else if (map[mx][my] > cnt) {
+                    ans = Math.min(ans, d);
                     return;
                 }
-
             }
-
         }
-
     }
 }
