@@ -8,8 +8,8 @@
 
 |      문제      | 레벨 |                           URL                            | 승희 코드 | 호진 코드 |  수진 코드 | 연의 코드 |문제 가져온 사람 |
 | :------------: | :--: | :------------------------------------------------------: |:--:|:--:|  :--:|:--:|  :--:|
-| 스타트 택시 | Lv.3 |[BOJ19238](https://www.acmicpc.net/problem/19238)| | | |  |연의|
-|네트워크 복구 | 골드 2|[BOJ2211](https://www.acmicpc.net/problem/2211)| | | |  |호진|
+| 스타트 택시 | 골드3 |[BOJ19238](https://www.acmicpc.net/problem/19238)| | | |  |연의|
+|네트워크 복구 | 골드2|[BOJ2211](https://www.acmicpc.net/problem/2211)| | | |  |호진|
 | 블록 이동하기 | Lv.3 |[PRG60063](https://school.programmers.co.kr/learn/courses/30/lessons/60063)| | | |  |수진|
 
 ---
