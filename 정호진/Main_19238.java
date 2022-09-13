@@ -150,7 +150,7 @@ public class Main_19238 {
         return false;
     }
 
-    // 범위를 넘어섰는지의 여부
+    // 범위를 넘어섰는지의 여부 
     private static boolean isOverRange(int r, int c) {
         if(r >= 1 && r <= N && c >= 1 && c <= N) return false;
         return true;
