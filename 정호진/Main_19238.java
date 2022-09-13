@@ -33,8 +33,8 @@ public class Main_19238 {
         R = Integer.parseInt(stk.nextToken());
         C = Integer.parseInt(stk.nextToken());
 
-        // 승객 위치 읽어오기 - 홀수: 출발지, 짝수: 도착지
-        arrivals = new int[M+1][2];
+        // 승객 위치 읽어오기
+        arrivals = new int[M+1][2]; // 도착지의 위치가 같을 수 있기 때문에 따로 map에 넣지 않고, 도착지는 승객별 개별로 보관한다.
         for(int i = 1; i <= M; i++) {
             stk = new StringTokenizer(br.readLine());
             int startR = Integer.parseInt(stk.nextToken());
@@ -47,14 +47,14 @@ public class Main_19238 {
             arrivals[i][1] = arrivalC;
         }
         // ===================== input end =======================
-
+        
         // 승객 수만큼 택시 운행 시작
-        boolean flag = true;
+        boolean flag = true; // 승객 태우기를 완료했는지 체크하는 flag
         for(int i = 0; i < M; i++) {
             // 승객 태우고 목적지 도착하기
             if(!move()) {
                 // 모든 승객 태우기 완료 X || 승객 태우던 중 연료 바닥났을 경우
-                flag = false;
+                flag = false; 
                 break;
             }
         }
@@ -70,7 +70,6 @@ public class Main_19238 {
 
     /** 승객 태우기 */
     private static boolean move() {
-//        System.out.println("new passenger");
         Queue<Point> queue = new LinkedList<>();
         Queue<Point> passengers = new PriorityQueue<>();
         boolean[][] visited = new boolean[N+1][N+1];
@@ -82,6 +81,7 @@ public class Main_19238 {
         while(!queue.isEmpty()) {
             Point p = queue.poll();
 
+            // 택시가 위치한 자리에 승객이 있을 수 있기 때문에 방향 이동 전 승객이 있는지 여부 확인
             if(startMap[p.r][p.c] >= 1) {
                 // 현재 거리를 기준으로 승객 태우기
                 passengers.add(new Point(p.r, p.c, p.movement));
@@ -93,12 +93,8 @@ public class Main_19238 {
                 int nr = p.r + dr[d];
                 int nc = p.c + dc[d];
                 int movement = p.movement + 1;
-
-//                System.out.println("nr : " + nr + "/ nc: " + nc);
+                
                 if(isOverRange(nr, nc) || visited[nr][nc] || map[nr][nc] == -1) continue;
-
-//                 남은 연료가 없다면 더이상 이동할 수 없다.
-//                if(K - movement <= 0) continue;
 
                 visited[nr][nc] = true;
                 queue.add(new Point(nr, nc, movement));
@@ -140,7 +136,8 @@ public class Main_19238 {
                 // 목적지에 도착했다면
                 if(nr == arrivals[no][0] && nc == arrivals[no][1]) {
                     K += (movement * 2) - movement; // 연료 2배로 충전하기
-//                    System.out.println("Arrival - nr : " + nr + "/ nc: " + nc + "/ K: " + K);
+                    
+                    // 목적지에서 다시 택시느 승객을 태우기 위해 출발한다.
                     R = nr;
                     C = nc;
                     return true;
