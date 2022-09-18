@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 class Solution {
@@ -16,7 +15,7 @@ class Solution {
     }
     public int solution(int[][] map) {
         int answer = 0;
-        
+
         int N = map.length;
 
         boolean[][][] visited = new boolean[N][N][4];
@@ -71,7 +70,7 @@ class Solution {
                 }
             }
         }
-        
+
         return answer;
     }
 }
