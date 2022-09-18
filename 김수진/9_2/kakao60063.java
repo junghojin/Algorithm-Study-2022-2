@@ -1,10 +1,7 @@
-package kakao;
+import java.io.*;
+import java.util.*;
 
-import java.io.IOException;
-import java.util.LinkedList;
-import java.util.Queue;
-
-public class kakao60063 {
+class Solution {
     static int[] dx = {0,1,0,-1};
     static int[] dy = {1,0,-1,0};
     static class Robot {
@@ -17,16 +14,12 @@ public class kakao60063 {
             this.w = w;
         }
     }
-    public static void main(String[] args) throws IOException {
-
-        int answer=0;
-
-        int[][] map = {{0, 0, 0, 1, 1}, {0, 0, 0, 1, 0},{0, 1, 0, 1, 1},{1, 1, 0, 0, 1},{0, 0, 0, 0, 0}};
-
+    public int solution(int[][] map) {
+        int answer = 0;
+        
         int N = map.length;
 
         boolean[][][] visited = new boolean[N][N][4];
-
 
         visited[0][0][0] = true;
         visited[0][1][2] = true;
@@ -77,18 +70,8 @@ public class kakao60063 {
 
                 }
             }
-
-
         }
-
-        System.out.println(answer);
-
-
-
-
-
-
-
-
+        
+        return answer;
     }
 }
