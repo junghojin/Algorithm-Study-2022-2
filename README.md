@@ -10,7 +10,7 @@
 | :-----: | :--: | :----------------------------------------------------------: | :-------: | :-------: | :-------: | :-------: | :--------------: |
 | 게임 개발 | 골3 | [BOJ1516](https://www.acmicpc.net/problem/1516) |  [Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0925/%EA%B2%8C%EC%9E%84%EA%B0%9C%EB%B0%9C.java)         |           |           |           |       승희       |
 | 코딩 테스트 공부  | Lv.3 | [PRG118668](https://school.programmers.co.kr/learn/courses/30/lessons/118668)|           |           |           |           |       호진       |
-| 표 편집 | Lv.3 | [PRG81303](https://school.programmers.co.kr/learn/courses/30/lessons/81303) |           |           |           |           |       수진       |
+| 표 편집 | Lv.3 | [PRG81303](https://school.programmers.co.kr/learn/courses/30/lessons/81303) |  [Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0925/%ED%91%9C%ED%8E%B8%EC%A7%91.java)         |           |           |           |       수진       |
 
 ---
 
