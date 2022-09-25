@@ -8,9 +8,9 @@
 
 |  문제   | 레벨 |                             URL                              | 승희 코드 | 호진 코드 | 수진 코드 | 연의 코드 | 문제 가져온 사람 |
 | :-----: | :--: | :----------------------------------------------------------: | :-------: | :-------: | :-------: | :-------: | :--------------: |
-| 게임 개발 | 골3 | [BOJ1516](https://www.acmicpc.net/problem/1516) |  [Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0925/%EA%B2%8C%EC%9E%84%EA%B0%9C%EB%B0%9C.java)         |           | [Code](https://github.com/junghojin/Algorithm-Study-2022-2/tree/main/%EA%B9%80%EC%88%98%EC%A7%84/9_3/BJ1516.java) |           |       승희       |
+| 게임 개발 | 골3 | [BOJ1516](https://www.acmicpc.net/problem/1516) |  [Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0925/%EA%B2%8C%EC%9E%84%EA%B0%9C%EB%B0%9C.java)         |           | [Code](https://github.com/junghojin/Algorithm-Study-2022-2/tree/main/%EA%B9%80%EC%88%98%EC%A7%84/9_3/BJ1516.java) |[Code](이연의/9월2주차/BJ_1516_게임개발.java) |       승희       |
 | 코딩 테스트 공부  | Lv.3 | [PRG118668](https://school.programmers.co.kr/learn/courses/30/lessons/118668)|           |           |           |           |       호진       |
-| 표 편집 | Lv.3 | [PRG81303](https://school.programmers.co.kr/learn/courses/30/lessons/81303) |  [Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0925/%ED%91%9C%ED%8E%B8%EC%A7%91.java)         |           | [Code](https://github.com/junghojin/Algorithm-Study-2022-2/tree/main/%EA%B9%80%EC%88%98%EC%A7%84/9_3/kakao_81303.java) |           |       수진       |
+| 표 편집 | Lv.3 | [PRG81303](https://school.programmers.co.kr/learn/courses/30/lessons/81303) |  [Code](https://github.com/junghojin/Algorithm-Study-2022-2/blob/main/%EC%9D%B4%EC%8A%B9%ED%9D%AC/0925/%ED%91%9C%ED%8E%B8%EC%A7%91.java)         |           | [Code](https://github.com/junghojin/Algorithm-Study-2022-2/tree/main/%EA%B9%80%EC%88%98%EC%A7%84/9_3/kakao_81303.java) | [Code](이연의/9월2주차/prog_81303_표편집.java) |       수진       |
 
 ---
 
